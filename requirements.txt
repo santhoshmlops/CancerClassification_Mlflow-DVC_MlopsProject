@@ -1,0 +1,56 @@
+# Install TensorFlow version 2.12.0
+tensorflow==2.12.0 
+
+# Install pandas for data manipulation and analysis
+ pandas 
+
+# Install gdown for downloading files from Google Drive
+gdown
+
+# Install DVC (Data Version Control) for managing machine learning projects
+dvc
+
+# Install MLflow version 2.2.2 for managing the end-to-end machine learning lifecycle
+mlflow==2.2.2
+
+# Install Jupyter Notebook for interactive computing and data visualization
+notebook
+
+# Install NumPy for scientific computing
+numpy
+
+# Install Matplotlib for creating visualizations
+matplotlib
+
+# Install Seaborn for statistical data visualization
+seaborn
+
+# Install python-box version 6.0.2 for working with dictionaries
+python-box==6.0.2
+
+# Install PyYAML for YAML parsing and emitting
+pyYAML
+
+# Install tqdm for displaying progress bars
+tqdm
+
+# Install ensure version 1.0.2 (assuming it's a custom or internal package)
+ensure==1.0.2
+
+# Install Joblib for lightweight pipelining
+joblib
+
+# Install types-PyYAML for type hinting information for PyYAML
+types-PyYAML
+
+# Install SciPy for scientific computing
+scipy
+
+# Install Flask for creating web applications
+Flask
+
+# Install Flask-Cors for handling Cross Origin Resource Sharing (CORS) in Flask
+Flask-Cors
+
+# Install the current directory as a package in development mode
+-e .
