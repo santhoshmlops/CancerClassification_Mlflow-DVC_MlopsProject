@@ -13,7 +13,7 @@ BATCH_SIZE: 16
 INCLUDE_TOP: False
 
 # Number of training epochs (1 epoch = 1 pass through the entire dataset)
-EPOCHS: 1
+EPOCHS: 10
 
 # Number of classes in the classification task (binary classification with 2 classes)
 CLASSES: 2

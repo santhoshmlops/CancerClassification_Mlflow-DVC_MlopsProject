@@ -43,3 +43,31 @@ class PrepareBaseModelConfig:
     
     # Number of classes in the model
     params_classes: int
+
+
+#A data class defining configuration parameters for preparing a base model.
+@dataclass(frozen=True)
+class TrainingConfig:
+    # Root directory where the base model and updates are stored
+    root_dir: Path
+
+    # Path to save trained model
+    trained_model_path: Path
+
+    # Path to updated base model
+    updated_base_model_path: Path
+
+    # Path to training data
+    training_data: Path
+
+    # Number of epochs for training
+    params_epochs: int
+
+    # Batch size for training
+
+    params_batch_size: int
+    # Flag indicating if data augmentation is applied
+    params_is_augmentation: bool
+    
+    # List of image size parameters
+    params_image_size: list
