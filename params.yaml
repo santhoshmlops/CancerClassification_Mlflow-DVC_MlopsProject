@@ -7,7 +7,7 @@ AUGMENTATION: True
 IMAGE_SIZE: [224, 224, 3] 
 
 # Number of training examples processed in one iteration
-BATCH_SIZE: 16
+BATCH_SIZE: 32
 
 # Specify whether to include the fully connected layers of the VGG16 model
 INCLUDE_TOP: False
@@ -22,4 +22,4 @@ CLASSES: 2
 WEIGHTS: imagenet
 
 # Learning rate used for updating the model's weights during training
-LEARNING_RATE: 0.08
+LEARNING_RATE: 0.001

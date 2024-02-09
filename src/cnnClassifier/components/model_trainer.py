@@ -75,13 +75,21 @@ class Training:
         self.steps_per_epoch = self.train_generator.samples // self.train_generator.batch_size
         self.validation_steps = self.valid_generator.samples // self.valid_generator.batch_size
 
-        # Fitting the model on the training data
+        # Define early stopping callback
+        early_stopping = tf.keras.callbacks.EarlyStopping(
+            monitor='val_loss',  # Monitor validation loss
+            patience=3,           # Number of epochs with no improvement after which training will be stopped
+            restore_best_weights=True  # Restore model weights from the epoch with the best value of the monitored quantity
+        )
+
+        # Fitting the model on the training data with early stopping
         self.model.fit(
             self.train_generator,
             epochs=self.config.params_epochs,
             steps_per_epoch=self.steps_per_epoch,
             validation_steps=self.validation_steps,
-            validation_data=self.valid_generator
+            validation_data=self.valid_generator,
+            callbacks=[early_stopping]  # Add early stopping callback
         )
 
         # Saving the trained model
