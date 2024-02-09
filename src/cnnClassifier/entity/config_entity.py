@@ -71,3 +71,26 @@ class TrainingConfig:
     
     # List of image size parameters
     params_image_size: list
+
+
+#A data class defining configuration parameters for preparing a model Evaluation.
+
+@dataclass(frozen=True)
+class EvaluationConfig:
+    # Path to the model file
+    path_of_model: Path
+
+    # Path to the training data
+    training_data: Path
+
+    # Dictionary containing all evaluation parameters
+    all_params: dict
+
+    # URI for MLflow tracking
+    mlflow_uri: str
+
+    # List of parameters related to image size
+    params_image_size: list
+
+    # Batch size parameter
+    params_batch_size: int

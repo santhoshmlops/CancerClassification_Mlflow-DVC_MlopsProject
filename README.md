@@ -1,1 +1,7 @@
 # CancerClassification_Mlflow-DVC_MlopsProject
+
+export MLFLOW_TRACKING_URI=https://dagshub.com/santhoshmlops/CancerClassification_Mlflow-DVC_MlopsProject.mlflow 
+
+export MLFLOW_TRACKING_USERNAME=santhoshmlops 
+
+export MLFLOW_TRACKING_PASSWORD=53a23543ba2a4f2eed089f17b53b2d4c49ecebd5 

@@ -5,7 +5,8 @@ from cnnClassifier.constant import *
 from cnnClassifier.utils.common import read_yaml, create_directories
 from cnnClassifier.entity.config_entity import (DataIngestionConfig,
                                                 PrepareBaseModelConfig,
-                                                TrainingConfig)                                       
+                                                TrainingConfig,
+                                                EvaluationConfig)                                       
                                                 
 class ConfigurationManager:
     def __init__(
@@ -98,6 +99,25 @@ class ConfigurationManager:
         )
 
         return training_config
+    
+    # Function to get evaluation configuration for model evaluation
+    def get_evaluation_config(self) -> EvaluationConfig:
+        """
+        Generates an evaluation configuration for model evaluation.
+
+        Returns:
+            EvaluationConfig: Configuration for model evaluation.
+        """
+        eval_config = EvaluationConfig(
+            path_of_model="artifacts/training/model.h5",
+            training_data="artifacts/data_ingestion/Chest-CT-Scan-data",
+            mlflow_uri="https://dagshub.com/santhoshmlops/CancerClassification_Mlflow-DVC_MlopsProject.mlflow ",
+            all_params=self.params,
+            params_image_size=self.params.IMAGE_SIZE,
+            params_batch_size=self.params.BATCH_SIZE
+        )
+        return eval_config
+
 
 
     
