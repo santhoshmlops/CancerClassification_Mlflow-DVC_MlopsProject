@@ -11,7 +11,6 @@ from tensorflow.keras.preprocessing import image
 #model = tf.keras.models.load_model(os.path.join("artifacts","training", "model.h5"))
 model = tf.keras.models.load_model(os.path.join("model", "model.h5"))
 
-
 # Define a dictionary mapping class indices to class names
 map_dict = {0: 'Adenocarcinoma Cancer',
             1: 'Normal'}
