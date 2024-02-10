@@ -2,7 +2,7 @@
 tensorflow==2.12.0 
 
 # Install pandas for data manipulation and analysis
- pandas 
+pandas 
 
 # Install gdown for downloading files from Google Drive
 gdown
@@ -46,11 +46,12 @@ types-PyYAML
 # Install SciPy for scientific computing
 scipy
 
-# Install Flask for creating web applications
-Flask
+# Install Streamlit for creating web applications
+streamlit
 
-# Install Flask-Cors for handling Cross Origin Resource Sharing (CORS) in Flask
-Flask-Cors
+# OpenCV for computer vision tasks
+opencv-python
 
 # Install the current directory as a package in development mode
--e .
+#-e .
+

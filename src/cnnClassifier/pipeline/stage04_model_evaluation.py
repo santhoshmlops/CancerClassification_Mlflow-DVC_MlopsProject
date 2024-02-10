@@ -27,7 +27,7 @@ class EvaluationPipeline:
         evaluation.save_score()
         
         # Optionally log into MLflow
-        evaluation.log_into_mlflow()
+        #evaluation.log_into_mlflow()
 
 # Main block of the script
 if __name__ == '__main__':
