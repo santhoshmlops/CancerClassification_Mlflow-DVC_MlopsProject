@@ -5,3 +5,6 @@ export MLFLOW_TRACKING_URI=https://dagshub.com/santhoshmlops/CancerClassificatio
 export MLFLOW_TRACKING_USERNAME=santhoshmlops 
 
 export MLFLOW_TRACKING_PASSWORD=53a23543ba2a4f2eed089f17b53b2d4c49ecebd5 
+
+
+028982488083.dkr.ecr.us-east-2.amazonaws.com/cancer
