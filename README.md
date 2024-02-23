@@ -1,4 +1,4 @@
-# CancerClassification_Mlflow-DVC_MlopsProject
+# Cancer Classification - Mlflow and DVC
 
 export MLFLOW_TRACKING_URI=https://dagshub.com/santhoshmlops/CancerClassification_Mlflow-DVC_MlopsProject.mlflow 
 
